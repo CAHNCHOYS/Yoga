@@ -353,7 +353,7 @@ new Swiper(".classes__slider", {
 
   //Стрелочная навигация
   navigation: {
-    nextEl: ".rigth-arr",
+    nextEl: ".right-arr",
     prevEl: ".left-arr",
   },
   //Точки буллиты
