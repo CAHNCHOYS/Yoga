@@ -22,6 +22,7 @@
   width: 100%;
   z-index: 8;
   min-width: 320px;
+
 }
 
 .header::before {
@@ -125,6 +126,10 @@
     background-color: white;
   }
 
+
+  .header{
+    position: fixed;
+  }
   .header__top {
     padding: 10px 0px;
   }
