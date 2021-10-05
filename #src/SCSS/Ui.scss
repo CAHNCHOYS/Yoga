@@ -1,0 +1,64 @@
+//Общие стили
+// Применимые к нескольким блокам
+@import "adaptive-value.scss";
+
+//Стиль для ошибки при вводе неправильного емайла в инпут =========================
+
+.error-block {
+	span {
+		font-size: 18px;
+		color: red;
+	}
+	position: absolute;
+	width: auto;
+	height: auto;
+	z-index: 6;
+	font-weight: 700;
+}
+
+//============================================================
+
+.blue-title {
+	font-family: "Poppins", sans-serif;
+	opacity: 0.8;
+	@include adaptive-value("font-size", 72, 34);
+
+	line-height: 100 / 72 * 100%;
+	font-weight: 300;
+	color: #4c77eb;
+	&.small {
+		@include adaptive-value("font-size", 48, 24);
+
+		line-height: 58 / 48 * 100%;
+	}
+}
+
+.text {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #757575;
+}
+
+.blue-btn {
+	display:  inline-flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #7492ec;
+	min-height: 40px;
+	font-family: "Poppins", serif;
+	font-size: 12px;
+	line-height: 1.2;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #ffffff;
+	transition: 0.8s;
+	@media (any-hover: hover) {
+		&:hover {
+			background-color: #3766f5;
+		}
+	}
+	border-radius: 20px;
+	padding: 0px 30px;
+
+}

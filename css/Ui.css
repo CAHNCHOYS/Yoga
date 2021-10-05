@@ -1,0 +1,91 @@
+._ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+._ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.error-block {
+  position: absolute;
+  width: auto;
+  height: auto;
+  z-index: 6;
+  font-weight: 700;
+}
+
+.error-block span {
+  font-size: 18px;
+  color: red;
+}
+
+.blue-title {
+  font-family: "Poppins", sans-serif;
+  opacity: 0.8;
+  font-size: 72px;
+  line-height: 138.88889%;
+  font-weight: 300;
+  color: #4c77eb;
+}
+
+.blue-title.small {
+  font-size: 48px;
+  line-height: 120.83333%;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #757575;
+}
+
+.blue-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #7492ec;
+  min-height: 40px;
+  font-family: "Poppins", serif;
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  border-radius: 20px;
+  padding: 0px 30px;
+}
+
+@media (max-width: 1175px) {
+  .blue-title {
+    font-size: calc(34px + 38 * ((100vw - 320px) / (855)));
+  }
+
+  .blue-title.small {
+    font-size: calc(24px + 24 * ((100vw - 320px) / (855)));
+  }
+}
+
+@media (any-hover: hover) {
+  .blue-btn:hover {
+    background-color: #3766f5;
+  }
+}
